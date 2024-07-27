@@ -124,6 +124,19 @@ class Patterns{
                 System.out.println();
             }
     }
+    void Pat11(){
+        System.out.println("\nPattern 11:");
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=n;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String args[]){
         Patterns P=new Patterns();
         P.Pat1();
@@ -136,5 +149,6 @@ class Patterns{
         P.Pat8();
         P.Pat9();
         P.Pat10();
+        P.Pat11();
     }
 }
